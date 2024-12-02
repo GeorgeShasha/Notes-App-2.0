@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to left, lightblue, lightgreen);
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  color: darkblue;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 35px;
+}
+
+p {
+  color: darkblue;
+  text-align: center;
+  font-size: 18px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  padding: 50px;
+  margin: 0 20px;
+}
+
+.container textarea {
+  padding: 17px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  resize: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  height: 200px;
+  color: darkblue;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+}
+
+.container textarea::placeholder {
+  color: gray;
+  opacity: 0.4;
+}
+
+.container textarea:hover,
+.container textarea:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.container button {
+  height: 200px;
+  border-color: rgba(255, 255, 255, 0.37);
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 15px;
+  font-size: 50px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.container button:hover {
+  background: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
